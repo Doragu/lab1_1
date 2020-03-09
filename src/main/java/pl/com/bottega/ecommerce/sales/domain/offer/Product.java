@@ -5,34 +5,34 @@ import java.util.Date;
 
 public class Product {
 
-    private String productId;
+    private String id;
 
-    private String productName;
+    private String name;
 
-    private Date productSnapshotDate;
+    private Date snapshotDate;
 
-    private String productType;
+    private String type;
 
-    public Product(String productId, String productName, Date productSnapshotDate, String productType) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productSnapshotDate = productSnapshotDate;
-        this.productType = productType;
+    public Product(String id, String name, Date snapshotDate, String type) {
+        this.id = id;
+        this.name = name;
+        this.snapshotDate = snapshotDate;
+        this.type = type;
     }
 
-    public String getProductId() {
-        return productId;
+    public String getId() {
+        return id;
     }
 
-    public String getProductName() {
-        return productName;
+    public String getName() {
+        return name;
     }
 
-    public Date getProductSnapshotDate() {
-        return productSnapshotDate;
+    public Date getSnapshotDate() {
+        return snapshotDate;
     }
 
-    public String getProductType() {
-        return productType;
+    public String getType() {
+        return type;
     }
 }
