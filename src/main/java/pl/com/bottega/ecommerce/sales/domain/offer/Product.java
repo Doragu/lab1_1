@@ -13,11 +13,14 @@ public class Product {
 
     private String type;
 
-    public Product(String id, String name, Date snapshotDate, String type) {
+    private Money price;
+
+    public Product(String id, String name, Date snapshotDate, String type, BigDecimal price, String currency) {
         this.id = id;
         this.name = name;
         this.snapshotDate = snapshotDate;
         this.type = type;
+        this.price = new Money(price, currency);
     }
 
     public String getId() {
@@ -34,5 +37,9 @@ public class Product {
 
     public String getType() {
         return type;
+    }
+
+    public Money getPrice() {
+        return price;
     }
 }
